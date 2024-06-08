@@ -294,5 +294,10 @@ namespace DataAccess.Repository
             await _dbContext.SaveChangesAsync();
             return new { message = "Update Team Successfully" };
         }
+
+        public bool isDuplicateTeamName(string teamName)
+        {
+            return _dbContext.Departments.Any(d => d.Name.ToLower() == teamName.ToLower());
+        }
     }
 }

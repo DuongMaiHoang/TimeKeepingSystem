@@ -480,6 +480,11 @@ namespace DataAccess.Repository
 
         public async Task<object> CreateRequestLeave(LeaveRequestDTO dto, Guid employeeId)
         {
+            if (dto.dateRange == null || !dto.dateRange.Any())
+            {
+                throw new Exception("You chose wrong date or not chose date yet");
+            }
+
             RequestLeave newRequestLeave = new RequestLeave()
             {
                 Id = Guid.NewGuid(),

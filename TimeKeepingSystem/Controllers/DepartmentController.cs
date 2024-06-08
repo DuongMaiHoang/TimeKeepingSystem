@@ -58,6 +58,11 @@ namespace TimeKeepingSystem.Controllers
         {
             try
             {
+                if (_departmentRepository.isDuplicateTeamName(acc.Name))
+                {
+                    throw new Exception("Team Name is Duplicate, Create Team fail");
+                }
+
                 Guid leaveId = Guid.NewGuid();
                 Guid dateId = Guid.NewGuid();
                 Guid timeId = Guid.NewGuid();
