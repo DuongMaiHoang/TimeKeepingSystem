@@ -14,6 +14,7 @@ C:\Users\DELL\Desktop\Milk_BE\timekeepingsystem\BusinessObject\obj\Debug\net6.0\
 C:\Users\DELL\Desktop\Milk_BE\timekeepingsystem\BusinessObject\obj\Debug\net6.0\BusinessObject.genruntimeconfig.cache
 C:\Users\DELL\Desktop\Milk_BE\timekeepingsystem\BusinessObject\obj\Debug\net6.0\ref\BusinessObject.dll
 D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Debug\net6.0\appsettings.Development.json
+D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Debug\net6.0\appsettings.json
 D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Debug\net6.0\BusinessObject.deps.json
 D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Debug\net6.0\BusinessObject.runtimeconfig.json
 D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Debug\net6.0\BusinessObject.dll

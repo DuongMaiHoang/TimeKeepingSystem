@@ -12,5 +12,6 @@
         public string? PhoneNumber { get; set; }
         public Guid? RoleID { get; set; }
         public Guid? DepartmentID { get; set; }
+        public string? DeviceSerialNumber { get; set; }
     }
 }

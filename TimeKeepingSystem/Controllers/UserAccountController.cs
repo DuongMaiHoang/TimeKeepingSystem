@@ -203,6 +203,7 @@ namespace TimeKeepingSystem.Controllers
                     Role = "Employee",
                     UserID = id,
                     EmployeeStatus = EmployeeStatus.Working,
+                    DeviceSerialNumber = acc.DeviceSerialNumber
                 };
 
                 if (acc.DepartmentID != null)

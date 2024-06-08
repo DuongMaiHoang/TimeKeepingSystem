@@ -31,3 +31,4 @@ D:\Dan\project\TimeKeepingSystem\DataAccess\obj\Release\net6.0\refint\DataAccess
 D:\Dan\project\TimeKeepingSystem\DataAccess\obj\Release\net6.0\DataAccess.pdb
 D:\Dan\project\TimeKeepingSystem\DataAccess\obj\Release\net6.0\ref\DataAccess.dll
 D:\Dan\TimeKeepingSystem\DataAccess\bin\Release\net6.0\appsettings.json
+D:\Dan\project\TimeKeepingSystem\DataAccess\bin\Release\net6.0\appsettings.json

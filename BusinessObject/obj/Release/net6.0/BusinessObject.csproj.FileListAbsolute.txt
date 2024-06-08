@@ -29,3 +29,4 @@ D:\Dan\project\TimeKeepingSystem\BusinessObject\obj\Release\net6.0\BusinessObjec
 D:\Dan\project\TimeKeepingSystem\BusinessObject\obj\Release\net6.0\BusinessObject.genruntimeconfig.cache
 D:\Dan\project\TimeKeepingSystem\BusinessObject\obj\Release\net6.0\ref\BusinessObject.dll
 D:\Dan\TimeKeepingSystem\BusinessObject\bin\Release\net6.0\appsettings.json
+D:\Dan\project\TimeKeepingSystem\BusinessObject\bin\Release\net6.0\appsettings.json
