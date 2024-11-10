@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using System.Data.Common;
+using System.Runtime.ConstrainedExecution;
 using System.Text.Json;
 
 public class MyDbContext : DbContext
@@ -14,6 +15,9 @@ public class MyDbContext : DbContext
     {
         _configuration = configuration;
     }
+
+    //private String URL = "Server=DESKTOP-14337NG;Database=TimeSystem;User id=sa;Password=root;TrustServerCertificate=true;";
+    private String URL = "Data Source=SQL9001.site4now.net;Initial Catalog=db_aaf2fb_timesystem;User Id=db_aaf2fb_timesystem_admin;Password=guma0504;";
 
     public DbSet<UserAccount> UserAccounts { get; set; }
     public DbSet<Role> Roles { get; set; }
@@ -47,8 +51,9 @@ public class MyDbContext : DbContext
         if (!optionsBuilder.IsConfigured)
         {
             //optionsBuilder.UseSqlServer("Server=DESKTOP-14337NG;Database=TimeBackup;User id=sa;Password=root;TrustServerCertificate=true;");
-            optionsBuilder.UseSqlServer("Server=tcp:time-keeping.database.windows.net,1433;Initial Catalog=TimeSystem;Persist Security Info=False;User ID=guma1234;Password=doan1234!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=100;");
+            //optionsBuilder.UseSqlServer("Server=tcp:time-keeping.database.windows.net,1433;Initial Catalog=TimeSystem;Persist Security Info=False;User ID=guma1234;Password=doan1234!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=100;");
             //optionsBuilder.UseSqlServer(_configuration.GetConnectionString("online"));
+            optionsBuilder.UseSqlServer(URL);
         }
     }
 
