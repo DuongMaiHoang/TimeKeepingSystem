@@ -265,7 +265,7 @@ namespace DataAccess.Repository
             }
 
             var managerRole = await _dbContext.Roles.FirstOrDefaultAsync(r => r.Name == "Manager");
-            var employeeRole = await _dbContext.Roles.FirstOrDefaultAsync(r => r.Name == "User"); // Assuming "User" is the role for regular employees
+            var employeeRole = await _dbContext.Roles.FirstOrDefaultAsync(r => r.Name == "Employee"); // Assuming "User" is the role for regular employees
             if (managerRole == null || employeeRole == null)
             {
                 return "Roles not properly defined in the system.";
