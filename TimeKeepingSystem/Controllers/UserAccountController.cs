@@ -125,7 +125,7 @@ namespace TimeKeepingSystem.Controllers
                 if (customer != null)
                 {
 
-                    if (customer.IsDeleted == false && (customer.Employee.Department != null || customer.Role.Name == "Admin"))
+                    if (customer.IsDeleted == false && (customer.Employee.Department != null || customer.Role.Name == "Admin" || customer.Role.Name == "HR"))
                     {
 
                         return Ok(new { StatusCode = 200, Message = "Login succedfully", data = GenerateToken(customer), avatar = customer.Employee.LastName, employeeName = customer.Employee.FirstName + " " + customer.Employee.LastName, role = customer.Role.Name.Equals("User") ? "Employee" : customer.Role.Name, employeeId = customer.EmployeeId, teamId = customer.Employee.DepartmentId, teamName = customer.Employee.Department?.Name });
