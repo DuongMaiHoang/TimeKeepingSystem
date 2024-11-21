@@ -37,6 +37,7 @@ namespace DataAccess.Repository
                 Gender = a.Gender,
                 PhoneNumber = a.PhoneNumber,
                 RoleName = a.UserAccount.Role.Name,
+                IsActive = a.UserAccount.IsActive,
                 RoleId = a.UserAccount.RoleID,
                 ManagerId = a.DepartmentId != null ? _dbContext.Employees.Include(e => e.UserAccount).ThenInclude(u => u.Role).FirstOrDefault(e => e.DepartmentId == a.DepartmentId && e.UserAccount.Role.Name == "Manager") != null ? _dbContext.Employees.Include(e => e.UserAccount).ThenInclude(u => u.Role).FirstOrDefault(e => e.DepartmentId == a.DepartmentId && e.UserAccount.Role.Name == "Manager").Id : null : null,
                 DepartmentId = (Guid)(a.DepartmentId ?? null),
